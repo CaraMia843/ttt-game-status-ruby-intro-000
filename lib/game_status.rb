@@ -4,6 +4,5 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
-def WIN_COMBINATIONS
-
-end
+WIN_COMBINATIONS = 
+[0,1,2], 
