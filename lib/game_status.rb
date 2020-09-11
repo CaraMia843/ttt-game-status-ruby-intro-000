@@ -30,6 +30,4 @@ def won?(board)
     end
     
   end
-else
-  false 
-end
+
