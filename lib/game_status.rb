@@ -15,3 +15,11 @@ WIN_COMBINATIONS = [
 [6,4,2]
 ]
 
+def won?(board)
+  winner = []
+  empty_board = board.all? 
+  WIN_COMBINATIONS.each do |sub_array|
+    if empty_board || full?(board)
+      return false 
+    elsif sub_array.all? 
+end
