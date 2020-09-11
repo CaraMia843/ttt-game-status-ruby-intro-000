@@ -21,5 +21,9 @@ def won?(board)
   WIN_COMBINATIONS.each do |sub_array|
     if empty_board || full?(board)
       return false 
-    elsif sub_array.all? 
+    elsif sub_array.all? { |value| board[value] =="X" } || sub_array.all? { |value| board[value] =="O" }
+      winner = sub_array
+    end
+  end
+  winner
 end
